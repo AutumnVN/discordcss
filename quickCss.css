@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
+@import url('https://discordstyles.github.io/SoftX/SoftX.css');
+@import url('https://discordstyles.github.io/SoftX/RadialGlow.css');
+@import url('https://discordstyles.github.io/SoftX/VerticalUserArea.css');
+@import url('https://discordstyles.github.io/Addons/windows-titlebar.css');
+/* Replace every image to Chino
+img {
+    content: url('https://cdn.discordapp.com/avatars/833707580593143841/32a1c95f5472dd634037e52c7408c192.jpg?size=4096');
+    object-fit: cover;
+}
+/* */
+:root {
+    --interactive-hover: rgb(var(--accent));
+    --background-image: url('https://cdn.discordapp.com/attachments/844482853161271336/1029001344599740416/chino.jpg');
+    /* Background image | URL MUST BE A DIRECT LINK (ending in .jpg, .jpeg, .png, .gif) */
+    --background-blur: 0px;
+    /* Blur intensity of --background-image */
+    --opacity: 0.6;
+    /* Opacity of overall app. | Default: .85 */
+    --accent: 3, 169, 244;
+    /* Colour used around the app. | Values are in R,G,B format. | Default: 0, 231, 169 */
+    --glow-intensity: 1;
+    /* Intensity of the glow used around the app. | Set to 0 to disable the glow. | Decimals allowed | Default: 1 */
+    --font: Inter;
+    /* Custom font | Default: 'Inter' */
+    --channels-width: 300px;
+    /* Width of the channels list. | Default: 300px */
+    --guilds-width: 90px;
+    /* Width of the server list. | Default: 105px */
+    --members-width: 280px;
+    /* Width of the members list. | Default: 280px */
+    --server-size: 50px;
+    /* Size of the servers inside the server list. | Default: 50px */
+    --chat-avatar-size: 50px;
+    /* Size of the chat avatars. | Default: 32px */
+    --rs-small-spacing: 1px;
+    /* Gap between avatar and status for members list/dms | MUST end in px */
+    --rs-medium-spacing: 0px;
+    /* Gap between avatar and status for User popout | MUST end in px */
+    --rs-large-spacing: 0px;
+    /* Gap between avatar and status for User profiles | MUST end in px */
+    --rs-small-width: 1px;
+    /* Ring width | Default: 1.5px */
+    --rs-medium-width: 2px;
+    --rs-large-width: 3px;
+    --rs-avatar-shape: 50%;
+    /* 50% for round - 0% for square */
+    --rs-online-color: #43b581;
+    /* Colour for online status */
+    --rs-idle-color: #faa61a;
+    /* Colour for idle status */
+    --rs-dnd-color: #f04747;
+    /* Colour for dnd status */
+    --rs-offline-color: #636b75;
+    /* Colour for offline status */
+    --rs-phone-color: #43b581;
+    /* Colour of the ring and phone icon when a user is on their phone */
+    --rs-streaming-color: #643da7;
+    /* Colour for streaming status */
+    --rs-phone-visible: block;
+    /* Visibility of the phone icon next to a users avatar. | block = visible | none = hidden */
+    --rs-invisible-color: #747f8d;
+    /* Colour for invisible status - Note: this will only show for your own invisibility */
+}
+
+/* Home Button Custom Icon */
+.homeIcon-r0w4ny path {
+    fill: transparent
+}
+
+.homeIcon-r0w4ny {
+    background: url('https://cdn.discordapp.com/avatars/833707580593143841/32a1c95f5472dd634037e52c7408c192.jpg?size=64') center/cover no-repeat;
+    min-width: 60px;
+    min-height: 60px;
+}
+
+/* Member Since */
+.userInfoSection-3her-v>h3 {
+    color: var(--header-secondary);
+    margin-top: 16px;
+}
+
+/* Remove the black behind Popout and Profile Avatar */
+.bannerSVGWrapper-qc0szY mask {
+    display: none;
+}
+
+/* Fix Public */
+.communityInfoContainer-1dMVpU {
+    position: absolute;
+    right: 50px;
+    top: 23px;
+}
+
+/* Fix Profile Tab Buttons */
+.tabBarItem-30Te4-:nth-child(1):nth-last-child(2):after {
+    -webkit-mask: url('data:image/svg+xml; utf-8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>');
+    mask: url('data:image/svg+xml; utf-8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>');
+}
+
+.tabBarItem-30Te4-:nth-child(1):nth-last-child(3):after {
+    -webkit-mask: url('data:image/svg+xml; utf-8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>');
+    mask: url('data:image/svg+xml; utf-8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>');
+}
+
+.tabBarItem-30Te4-:nth-child(1):nth-last-child(4):after {
+    -webkit-mask: url('data:image/svg+xml; utf-8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>');
+    mask: url('data:image/svg+xml; utf-8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>');
+}
+
+.tabBarItem-30Te4-:nth-child(2):nth-last-child(1)::after {
+    -webkit-mask: url('data:image/svg+xml; utf-8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 5c7.18 0 13 5.82 13 13M6 11a7 7 0 017 7m-6 0a1 1 0 11-2 0 1 1 0 012 0z" /></svg>');
+    mask: url('data:image/svg+xml; utf-8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 5c7.18 0 13 5.82 13 13M6 11a7 7 0 017 7m-6 0a1 1 0 11-2 0 1 1 0 012 0z" /></svg>');
+}
+
+.tabBarItem-30Te4-:nth-child(2):nth-last-child(3)::after {
+    -webkit-mask: url('data:image/svg+xml; utf-8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 5c7.18 0 13 5.82 13 13M6 11a7 7 0 017 7m-6 0a1 1 0 11-2 0 1 1 0 012 0z" /></svg>');
+    mask: url('data:image/svg+xml; utf-8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 5c7.18 0 13 5.82 13 13M6 11a7 7 0 017 7m-6 0a1 1 0 11-2 0 1 1 0 012 0z" /></svg>');
+}
+
+.tabBarItem-30Te4-:nth-last-child(2)::after {
+    -webkit-mask: url('data:image/svg+xml; utf-8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" /></svg>');
+    mask: url('data:image/svg+xml; utf-8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" /></svg>');
+}
+
+.tabBarItem-30Te4-:nth-last-child(1)::after {
+    -webkit-mask: url('data:image/svg+xml; utf-8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" /></svg>');
+    mask: url('data:image/svg+xml; utf-8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" /></svg>');
+}
+
+/* Fix Emoji Tab Buttons */
+#app-mount .navItem-3McpmW:nth-child(1) .contents-3ca1mk::before {
+    -webkit-mask: url('data:image/svg+xml; utf-8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>');
+    mask: url('data:image/svg+xml; utf-8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>');
+}
+
+#app-mount .navItem-3McpmW:nth-child(2) .contents-3ca1mk::before {
+    -webkit-mask: url('data:image/svg+xml; utf-8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" /></svg>');
+    mask: url('data:image/svg+xml; utf-8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" /></svg>');
+}
+
+#app-mount .navItem-3McpmW:nth-child(3) .contents-3ca1mk::before {
+    -webkit-mask: url('data:image/svg+xml; utf-8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>');
+    mask: url('data:image/svg+xml; utf-8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>');
+}
+
+/* Remove "Add to Server" button on Bot Profile */
+.applicationInstallButton-1-58qm.button-f2h6uQ.lookFilled-yCfaCM.colorBrand-I6CyqQ.sizeSmall-wU2dO-.grow-2sR_-F {
+    display: none;
+}
+
+/* Remove Turn on Camera button because it's fucking too big and easy to misclick */
+.button-1EGGcP[aria-label="Turn On Camera"] {
+    display: none;
+}
+
+/* Remove Nitro Gift button */
+.contents-3ca1mk.button-2fCJ0o.button-3BaQ4X {
+    display: none;
+}
+
+/* Fix Voice Text Channel Buttons */
+.button-f2h6uQ.lookBlank-21BCro.colorBrand-I6CyqQ.grow-2sR_-F.chatButton-10jXXp {
+    position: fixed;
+    top: 47px;
+    right: 227px;
+}
+
+/* Voice Background */
+[data-selenium-video-tile="393694671383166998"] .background-L8lGH6 {
+    background: url("https://cdn.discordapp.com/attachments/844482853161271336/1029001344599740416/chino.jpg") center/cover no-repeat;
+}
+
+/* User Background */
+/* Popout */
+.userPopout-2j1gM4.profileColors-3Y0XaR[aria-label="AutumnVN"] .banner-1YaD3N.popoutBanner-3cqRD9 {
+    background: url("https://cdn.discordapp.com/attachments/844482853161271336/1029001344599740416/chino.jpg") center/cover no-repeat;
+    width: 300px;
+    height: 120px;
+}
+.userPopout-2j1gM4.profileColors-3Y0XaR[aria-label="AutumnVN"] .bannerSVGWrapper-qc0szY {
+    width: 300px;
+    height: 120px;   
+}
+.userPopout-2j1gM4.profileColors-3Y0XaR[aria-label="AutumnVN"] .bannerSVGWrapper-qc0szY foreignObject {
+    y: -30px;
+    width: 300px;
+    height: 120px;    
+}
+.userPopout-2j1gM4.profileColors-3Y0XaR[aria-label="AutumnVN"] .avatarWrapperNormal-ahVUaC.avatarWrapper-eenWra.avatarPositionNormal-2jWoC2.clickable-GKg4Qy {
+    top: 80px;
+}
+/* Profile */
+.root-8LYsGj.profileColors-3Y0XaR.root-g14mjS.small-23Atuv.fullscreenOnMobile-ixj0e3 .banner-1YaD3N.profileBanner-1owKI5 {
+    background: url("https://cdn.discordapp.com/attachments/844482853161271336/1029001344599740416/chino.jpg") center/cover no-repeat;
+    width: 600px;
+    height: 240px;
+}
+.root-8LYsGj.profileColors-3Y0XaR.root-g14mjS.small-23Atuv.fullscreenOnMobile-ixj0e3 .bannerSVGWrapper-qc0szY {
+    width: 600px;
+    height: 240px;   
+}
+.root-8LYsGj.profileColors-3Y0XaR.root-g14mjS.small-23Atuv.fullscreenOnMobile-ixj0e3 .bannerSVGWrapper-qc0szY foreignObject {
+    y: -60px;
+    width: 600px;
+    height: 240px;    
+}
+
+/* I don't care about Create Thread */
+[class^="threadSuggestionBar"] {
+    display: none;
+}
