@@ -1,14 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
-@import url('https://discordstyles.github.io/SoftX/SoftX.css');
+@import url('https://raw.githubusercontent.com/AutumnVN/discordcss/main/SoftX.css');
 @import url('https://discordstyles.github.io/SoftX/RadialGlow.css');
 @import url('https://discordstyles.github.io/SoftX/VerticalUserArea.css');
 @import url('https://discordstyles.github.io/Addons/windows-titlebar.css');
-/* Replace every image to Chino
-img {
-    content: url('https://cdn.discordapp.com/avatars/833707580593143841/32a1c95f5472dd634037e52c7408c192.jpg?size=4096');
-    object-fit: cover;
-}
-/* */
+
 :root {
     --interactive-hover: rgb(var(--accent));
     --background-image: url('https://cdn.discordapp.com/attachments/844482853161271336/1029001344599740416/chino.jpg');
@@ -178,35 +173,74 @@ img {
     width: 300px;
     height: 120px;
 }
+
 .userPopout-2j1gM4.profileColors-3Y0XaR[aria-label="AutumnVN"] .bannerSVGWrapper-qc0szY {
     width: 300px;
-    height: 120px;   
+    height: 120px;
 }
+
 .userPopout-2j1gM4.profileColors-3Y0XaR[aria-label="AutumnVN"] .bannerSVGWrapper-qc0szY foreignObject {
     y: -30px;
     width: 300px;
-    height: 120px;    
+    height: 120px;
 }
+
 .userPopout-2j1gM4.profileColors-3Y0XaR[aria-label="AutumnVN"] .avatarWrapperNormal-ahVUaC.avatarWrapper-eenWra.avatarPositionNormal-2jWoC2.clickable-GKg4Qy {
     top: 80px;
 }
+
 /* Profile */
 .root-8LYsGj.profileColors-3Y0XaR.root-g14mjS.small-23Atuv.fullscreenOnMobile-ixj0e3 .banner-1YaD3N.profileBanner-1owKI5 {
     background: url("https://cdn.discordapp.com/attachments/844482853161271336/1029001344599740416/chino.jpg") center/cover no-repeat;
     width: 600px;
     height: 240px;
 }
+
 .root-8LYsGj.profileColors-3Y0XaR.root-g14mjS.small-23Atuv.fullscreenOnMobile-ixj0e3 .bannerSVGWrapper-qc0szY {
     width: 600px;
-    height: 240px;   
+    height: 240px;
 }
+
 .root-8LYsGj.profileColors-3Y0XaR.root-g14mjS.small-23Atuv.fullscreenOnMobile-ixj0e3 .bannerSVGWrapper-qc0szY foreignObject {
     y: -60px;
     width: 600px;
-    height: 240px;    
+    height: 240px;
 }
 
 /* I don't care about Create Thread */
 [class^="threadSuggestionBar"] {
     display: none;
 }
+
+/* Replace every image to Chino
+img {
+    content: url('https://cdn.discordapp.com/avatars/833707580593143841/32a1c95f5472dd634037e52c7408c192.jpg?size=4096');
+    object-fit: cover;
+}
+/* */
+
+/* Reduce Backdrop Filter Lag 
+@-webkit-keyframes fadeIn {
+    from {
+        backdrop-filter: blur(var(--blur));
+        opacity: 0;
+    }
+
+    to {
+        backdrop-filter: blur(var(--blur));
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        backdrop-filter: blur(var(--blur));
+        opacity: 0;
+    }
+
+    to {
+        backdrop-filter: blur(var(--blur));
+        opacity: 1;
+    }
+}
+/* */
