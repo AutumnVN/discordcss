@@ -30,8 +30,6 @@
     --server-spacing: 16px;
     --guild-scrollbar: none;
     --unread-colour: 255 255 255;
-    --backdrop-background: var(--bg-primary);
-    --backdrop-blur: 10px;
     --channel-height: 40px;
     --member-height: 54px;
     --dm-height: 56px;
@@ -345,8 +343,6 @@
   #app-mount .tooltipPrimary-3qLMbS {
     background: var(--bg-primary);
     border: 1px solid var(--border);
-    -webkit-backdrop-filter: blur(2px);
-            backdrop-filter: blur(2px);
     box-shadow: none;
   }
   
@@ -492,8 +488,6 @@
     border: 1px solid var(--border);
     border-radius: 0 0 6px 6px;
     background: var(--bg-primary);
-    -webkit-backdrop-filter: blur(var(--blur));
-            backdrop-filter: blur(var(--blur));
   }
   #app-mount .option-2eIyOn {
     position: relative;
@@ -1140,8 +1134,6 @@
   #app-mount .wrapper-2vIMkT {
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid var(--border);
-    -webkit-backdrop-filter: blur(5px);
-            backdrop-filter: blur(5px);
     box-shadow: none;
     border-radius: 6px;
     z-index: 1;
@@ -1461,8 +1453,6 @@
     border-radius: 0;
     box-shadow: none;
     opacity: 1;
-    -webkit-backdrop-filter: blur(3px);
-            backdrop-filter: blur(3px);
     border-radius: 6px;
   }
   #app-mount .barButtonBase-Sk2mdB {
@@ -1485,8 +1475,6 @@
     border-radius: 6px;
     right: 12px;
     bottom: 16px;
-    -webkit-backdrop-filter: blur(3px);
-            backdrop-filter: blur(3px);
   }
   #app-mount .chatHeaderBar-2fUORh {
     background: var(--bg-primary);
@@ -1503,8 +1491,6 @@
   #app-mount .searchHeader-1r_ZSh {
     background: var(--bg-primary);
     border-bottom: 1px solid var(--border);
-    -webkit-backdrop-filter: blur(5px);
-            backdrop-filter: blur(5px);
   }
   #app-mount .channelName-3w2Y3c {
     background: transparent;
@@ -1749,8 +1735,6 @@
     right: 1px;
     bottom: 1px;
     left: 1px;
-    -webkit-backdrop-filter: blur(5px);
-            backdrop-filter: blur(5px);
     z-index: -1;
   }
   #app-mount .menu-1QACrS .scroller-1bVxF5 {
@@ -1844,8 +1828,6 @@
     left: -100vmax;
     background: var(--backdrop-background);
     z-index: -1;
-    -webkit-backdrop-filter: blur(var(--backdrop-blur));
-            backdrop-filter: blur(var(--backdrop-blur));
     animation: fadeIn 0.2s ease forwards;
   }
   #app-mount .search-39IXmY {
@@ -1980,8 +1962,6 @@
     box-shadow: none;
     border: 1px solid var(--border);
     background: var(--bg-primary);
-    -webkit-backdrop-filter: blur(var(--blur));
-            backdrop-filter: blur(var(--blur));
     border-radius: 6px;
   }
   #app-mount .userPopout-2j1gM4 .input-2g-os5 {
@@ -2043,8 +2023,6 @@
   #app-mount .container-18GwIk {
     background: var(--bg-primary);
     border-radius: 6px;
-    -webkit-backdrop-filter: blur(var(--blur));
-            backdrop-filter: blur(var(--blur));
     border: 1px solid var(--border);
     animation: fadeIn 0.2s ease forwards;
     box-shadow: none;
@@ -2056,8 +2034,6 @@
   
   #app-mount .autocomplete-3NRXG8 {
     background: var(--bg-primary);
-    -webkit-backdrop-filter: blur(var(--blur));
-            backdrop-filter: blur(var(--blur));
     border: 1px solid var(--border);
     box-shadow: none;
   }
@@ -2109,8 +2085,6 @@
   }
   #app-mount .categoryHeader-OpJ1Ly {
     background: var(--bg-primary);
-    -webkit-backdrop-filter: blur(var(--blur));
-            backdrop-filter: blur(var(--blur));
   }
   #app-mount .categorySection-3hl0bM {
     margin: 0;
@@ -2134,8 +2108,6 @@
     background: var(--bg-primary);
     border-radius: 6px;
     border: 1px solid var(--border);
-    -webkit-backdrop-filter: blur(var(--blur));
-            backdrop-filter: blur(var(--blur));
     box-shadow: none;
     padding: 0;
     display: flex;
@@ -2346,8 +2318,6 @@
   }
   #app-mount .unicodeShortcut-3N8oDe {
     background: var(--bg-primary);
-    -webkit-backdrop-filter: blur(var(--blur));
-            backdrop-filter: blur(var(--blur));
     border-top: 1px solid var(--border);
   }
   #app-mount .content-1CboaJ {
@@ -2365,8 +2335,6 @@
   #app-mount .wrapper-1NNaWG {
     background: var(--bg-primary);
     border-bottom: 1px solid var(--border);
-    -webkit-backdrop-filter: blur(var(--blur));
-            backdrop-filter: blur(var(--blur));
   }
   #app-mount .emojiItem-277VFM.emojiItemSelected-2Lg50V {
     background: rgba(255, 255, 255, 0.1);
@@ -2417,8 +2385,6 @@
     background: var(--bg-primary);
     box-shadow: none;
     border: 1px solid var(--border);
-    -webkit-backdrop-filter: blur(var(--blur));
-            backdrop-filter: blur(var(--blur));
   }
   #app-mount .recentMentionsPopout-2bI1ZN .scroller-145h9c {
     padding: 0 !important;
@@ -2488,8 +2454,6 @@
   #app-mount .popoutContent-3RWpUF {
     background: var(--bg-primary);
     border-radius: 6px;
-    -webkit-backdrop-filter: blur(var(--blur));
-            backdrop-filter: blur(var(--blur));
     border: 1px solid var(--border);
     box-shadow: none;
   }
@@ -2658,8 +2622,6 @@
     box-sizing: border-box;
     z-index: 1;
     background: var(--bg-primary);
-    -webkit-backdrop-filter: blur(var(--blur));
-            backdrop-filter: blur(var(--blur));
     margin: 0;
   }
   #app-mount .searchHeader-3ZIh2x img {
@@ -2746,8 +2708,6 @@
   
   #app-mount .layer-86YKbF:not(.baseLayer-W6S8cY) {
     background: var(--bg-primary);
-    -webkit-backdrop-filter: blur(var(--backdrop-blur));
-            backdrop-filter: blur(var(--backdrop-blur));
     top: 0;
     left: 0;
     padding: 0;
@@ -2934,8 +2894,6 @@
     margin: 0;
     border-bottom: 1px solid var(--border);
     background: var(--bg-primary);
-    -webkit-backdrop-filter: blur(var(--blur));
-            backdrop-filter: blur(var(--blur));
   }
   #app-mount .layer-86YKbF[aria-label=GUILD_SETTINGS] .list-1AJFv_ {
     padding: 73px 0 0 !important;
@@ -2982,8 +2940,6 @@
     margin: -24px -24px 24px;
     padding: 24px 24px 0;
     background: var(--bg-primary);
-    -webkit-backdrop-filter: blur(var(--blur));
-            backdrop-filter: blur(var(--blur));
     border-bottom: 1px solid var(--border);
   }
   #app-mount .layer-86YKbF[aria-label=GUILD_SETTINGS] .tabBar-3DfKkN {
@@ -3061,13 +3017,7 @@
     border-bottom: 1px solid var(--border);
   }
   
-  #app-mount .backdrop-2ByYRN {
-    background: var(--backdrop-background) !important;
-    -webkit-backdrop-filter: blur(var(--backdrop-blur)) !important;
-            backdrop-filter: blur(var(--backdrop-blur)) !important;
-    opacity: 1 !important;
-    animation: fadeIn 0.2s ease forwards;
-  }
+
   #app-mount .root-g14mjS {
     box-shadow: none !important;
     border-radius: 6px;
@@ -3078,8 +3028,6 @@
   #app-mount .footer-31IekZ {
     background: transparent;
     border-top: 1px solid var(--border);
-    -webkit-backdrop-filter: blur(var(--blur));
-            backdrop-filter: blur(var(--blur));
     box-shadow: none;
   }
   #app-mount .message-G6O-Wv {
@@ -3235,8 +3183,6 @@
     padding: 10px 12px;
     border-radius: 6px;
     border: 1px solid var(--border);
-    -webkit-backdrop-filter: blur(var(--blur));
-            backdrop-filter: blur(var(--blur));
     overflow: visible;
     opacity: 0;
     visibility: hidden;
@@ -3521,8 +3467,6 @@
     margin: 0 -32px;
     background: var(--bg-primary);
     border-bottom: 1px solid var(--border);
-    -webkit-backdrop-filter: blur(var(--blur));
-            backdrop-filter: blur(var(--blur));
     z-index: 1;
   }
   #app-mount .bd-search-wrapper {
@@ -3615,8 +3559,6 @@
   
   .bd-toasts .bd-toast {
     padding: 12px 16px;
-    -webkit-backdrop-filter: blur(var(--blur));
-            backdrop-filter: blur(var(--blur));
     box-shadow: none;
     background: rgba(255, 255, 255, 0.1);
     border: 1px solid var(--border);
@@ -3696,8 +3638,6 @@
   }
   #app-mount .ChannelDms-channelpopout-popout {
     background: var(--bg-primary);
-    -webkit-backdrop-filter: blur(var(--blur));
-            backdrop-filter: blur(var(--blur));
     box-shadow: none;
     border: 1px solid var(--border);
     border-radius: 0;
@@ -3733,8 +3673,6 @@
     padding: 12px;
     position: relative;
     z-index: 1;
-    -webkit-backdrop-filter: blur(var(--blur));
-            backdrop-filter: blur(var(--blur));
     box-shadow: none;
     border-bottom: 1px solid var(--border);
   }
@@ -3826,8 +3764,6 @@
     width: var(--members-width);
     border-bottom: 1px solid var(--border);
     z-index: 2;
-    -webkit-backdrop-filter: blur(var(--blur));
-            backdrop-filter: blur(var(--blur));
   }
   
   #app-mount .container-6sXIoE {
@@ -3871,8 +3807,6 @@
     box-sizing: border-box;
     z-index: 1000;
     background: var(--bg-primary);
-    -webkit-backdrop-filter: blur(var(--blur));
-            backdrop-filter: blur(var(--blur));
   }
   #app-mount .repoHeader-2KfNvH > div {
     max-width: unset;
@@ -3929,8 +3863,6 @@
     border-radius: 6px;
     border: 1px solid var(--border);
     box-shadow: var(--shadow-lg);
-    -webkit-backdrop-filter: blur(var(--blur));
-            backdrop-filter: blur(var(--blur));
   }
   body #ChannelsPreview::before {
     content: none;
