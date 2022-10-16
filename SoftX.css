@@ -1819,17 +1819,7 @@
     width: 24px;
     height: 24px;
   }
-  #app-mount .search-2Mwzzq.focused-1xh-wG::before {
-    content: "";
-    position: fixed;
-    top: -100vmax;
-    right: -100vmax;
-    bottom: -100vmax;
-    left: -100vmax;
-    background: var(--backdrop-background);
-    z-index: -1;
-    animation: fadeIn 0.2s ease forwards;
-  }
+  
   #app-mount .search-39IXmY {
     margin: 0 24px 0 0;
   }
