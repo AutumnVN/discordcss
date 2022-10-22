@@ -150,7 +150,7 @@
 }
 
 /* Remove Nitro Gift button */
-.contents-3ca1mk.button-2fCJ0o.button-3BaQ4X {
+.button-f2h6uQ.lookBlank-21BCro.colorBrand-I6CyqQ.grow-2sR_-F[aria-label="Send a gift"] {
     display: none;
 }
 
@@ -205,11 +205,6 @@
     y: -60px;
     width: 600px;
     height: 240px;
-}
-
-/* I don't care about Create Thread */
-[class^="threadSuggestionBar"] {
-    display: none;
 }
 
 /* Replace every image to Chino
