@@ -4,6 +4,7 @@
 @import url('https://discordstyles.github.io/SoftX/VerticalUserArea.css');
 @import url('https://discordstyles.github.io/Addons/windows-titlebar.css');
 
+
 :root {
     --interactive-hover: rgb(var(--accent));
     --background-image: url('https://cdn.discordapp.com/attachments/844482853161271336/1029001344599740416/chino.jpg');
@@ -75,11 +76,6 @@
     margin-top: 16px;
 }
 
-/* Remove the black behind Popout and Profile Avatar */
-.bannerSVGWrapper-qc0szY mask {
-    display: none;
-}
-
 /* Fix Public */
 .communityInfoContainer-1dMVpU {
     position: absolute;
@@ -149,11 +145,6 @@
     display: none;
 }
 
-/* Remove Nitro Gift button */
-.button-f2h6uQ.lookBlank-21BCro.colorBrand-I6CyqQ.grow-2sR_-F[aria-label="Send a gift"] {
-    display: none;
-}
-
 /* Fix Voice Text Channel Buttons */
 .button-f2h6uQ.lookBlank-21BCro.colorBrand-I6CyqQ.grow-2sR_-F.chatButton-10jXXp {
     position: fixed;
@@ -214,32 +205,6 @@ img {
 }
 /* */
 
-/* Reduce Backdrop Filter Lag 
-@-webkit-keyframes fadeIn {
-    from {
-        backdrop-filter: blur(var(--blur));
-        opacity: 0;
-    }
-
-    to {
-        backdrop-filter: blur(var(--blur));
-        opacity: 1;
-    }
-}
-
-@keyframes fadeIn {
-    from {
-        backdrop-filter: blur(var(--blur));
-        opacity: 0;
-    }
-
-    to {
-        backdrop-filter: blur(var(--blur));
-        opacity: 1;
-    }
-}
-/* */
-
 /* Change Code Font */
 [class^="markdown-"] [class^="codeInline-"],
 [class^="codeLine-"],
@@ -252,5 +217,28 @@ img {
 code.inline,
 code,
 .hljs {
-  font-family: var(--font-code) !important;
+    font-family: var(--font-code) !important;
+}
+
+/* No Nitro Ads */
+[class^="channel-"]>div>[href="/store"],/* Nitro Button above DM List */
+[class^="channelTextArea"] [class^="buttons-"]>button,/* Hide Gift Button */
+[class^="upsellVisible-"],/* Hide Banner Nitro Upsell Header */
+[class^="premiumIconWrapper"],/* Hide Nitro Icon on Banners */
+[class^="characterCount-"] [class*="upsell-"],/* "Send longer Messages with Discord Nitro!" */
+[class^="emojiSection-"] [class*="shinyButton-"]/* "Get Nitro" button in Emoji/Sticker modal" */
+    {
+    display: none !important;
+}
+
+/* New Profile is shit */
+/* Remove Status Circle Shadow */
+.mask-1FEkla.svg-2azL_l>circle {
+    opacity: 0 !important
+}
+
+.avatarHint-2g3Mcd>foreignObject {
+    mask: none !important;
+    border-radius: 50% !important;
+    overflow: hidden;
 }
