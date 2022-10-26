@@ -6,6 +6,8 @@
 
 
 :root {
+    --dark-background: #20202069;
+    --dark-background-2: #69696969;
     --interactive-hover: rgb(var(--accent));
     --background-image: url('https://cdn.discordapp.com/attachments/844482853161271336/1029001344599740416/chino.jpg');
     /* Background image | URL MUST BE A DIRECT LINK (ending in .jpg, .jpeg, .png, .gif) */
@@ -31,9 +33,9 @@
     /* Size of the chat avatars. | Default: 32px */
     --rs-small-spacing: 1px;
     /* Gap between avatar and status for members list/dms | MUST end in px */
-    --rs-medium-spacing: 0px;
+    --rs-medium-spacing: 2px;
     /* Gap between avatar and status for User popout | MUST end in px */
-    --rs-large-spacing: 0px;
+    --rs-large-spacing: 3px;
     /* Gap between avatar and status for User profiles | MUST end in px */
     --rs-small-width: 1px;
     /* Ring width | Default: 1.5px */
@@ -221,12 +223,19 @@ code,
 }
 
 /* No Nitro Ads */
-[class^="channel-"]>div>[href="/store"],/* Nitro Button above DM List */
-[class^="channelTextArea"] [class^="buttons-"]>button,/* Hide Gift Button */
-[class^="upsellVisible-"],/* Hide Banner Nitro Upsell Header */
-[class^="premiumIconWrapper"],/* Hide Nitro Icon on Banners */
-[class^="characterCount-"] [class*="upsell-"],/* "Send longer Messages with Discord Nitro!" */
-[class^="emojiSection-"] [class*="shinyButton-"]/* "Get Nitro" button in Emoji/Sticker modal" */
+[class^="channel-"]>div>[href="/store"],
+/* Nitro Button above DM List */
+[class^="channelTextArea"] [class^="buttons-"]>button,
+/* Hide Gift Button */
+[class^="upsellVisible-"],
+/* Hide Banner Nitro Upsell Header */
+[class^="premiumIconWrapper"],
+/* Hide Nitro Icon on Banners */
+[class^="characterCount-"] [class*="upsell-"],
+/* "Send longer Messages with Discord Nitro!" */
+[class^="emojiSection-"] [class*="shinyButton-"]
+
+/* "Get Nitro" button in Emoji/Sticker modal" */
     {
     display: none !important;
 }
@@ -242,3 +251,19 @@ code,
     border-radius: 50% !important;
     overflow: hidden;
 }
+
+/* Transparent Background Popout And Profile */
+#app-mount .profileColors-3Y0XaR {
+    --profile-avatar-border-color: transparent !important;
+    --profile-gradient-primary-color: var(--dark-background) !important;
+    --profile-gradient-secondary-color: var(--dark-background) !important;
+    --profile-body-background-color: transparent !important;
+    --profile-gradient-overlay-color: transparent !important;
+    --profile-body-divider-color: var(--dark-background-2) !important;
+    --profile-role-pill-background-color: var(--dark-background-2) !important;
+    --profile-gradient-button-color: var(--dark-background-2) !important;
+}
+[class^="textarea"], [class^="inputDefault"] {
+    background: transparent !important;
+}
+
