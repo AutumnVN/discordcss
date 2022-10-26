@@ -262,6 +262,7 @@ code,
     --profile-body-divider-color: var(--dark-background-2) !important;
     --profile-role-pill-background-color: var(--dark-background-2) !important;
     --profile-gradient-button-color: var(--dark-background-2) !important;
+    --profile-message-input-border-color: transparent !important;
 }
 [class^="textarea"], [class^="inputDefault"] {
     background: transparent !important;
