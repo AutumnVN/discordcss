@@ -240,6 +240,12 @@ code,
     display: none !important;
 }
 
+/* Very Big Picture In Picture */
+.pictureInPictureVideo-2puO2Q {
+    width: 640px;
+    height: 360px;
+}
+
 /* New Profile is shit */
 /* Remove Status Circle Shadow */
 .mask-1FEkla.svg-2azL_l>circle {
