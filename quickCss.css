@@ -246,6 +246,17 @@ code,
     height: 360px;
 }
 
+/* Text */
+[class^="scrollerContent-"]::after {
+    content: "AutumnVN // Chino Kafuu";
+    position: sticky;
+    color: var(--text-normal);
+    opacity: 50%;
+    align-self: flex-end;
+    right: 20px;
+    bottom: 12px;
+}
+
 /* New Profile is shit */
 /* Remove Status Circle Shadow */
 .mask-1FEkla.svg-2azL_l>circle {
