@@ -257,6 +257,40 @@ code,
     bottom: 12px;
 }
 
+/* Remove Invite Button On Channel */
+.iconBase-2G48Fc[aria-label="Create Invite"] {
+    display: none !important;
+}
+
+/* Remove Help Button */
+.iconWrapper-2awDjA.clickable-ZD7xvu[aria-label="Help"] {
+    display: none !important;
+}
+
+/* Remove Useless Context Menu */
+#channel-context-invite-people,
+#user-context-invite-to-server,
+#user-context-mark-as-message-request,
+#user-context-clear-message-request,
+#user-context-apps,
+#user-context-call,
+#user-context-note,
+#user-context-add-friend-nickname,
+#message-actions-reply,
+#message-actions-thread,
+#message-actions-apps,
+#message-actions-mark-unread,
+#message-actions-edit,
+#message-add-reaction,
+#message-reply,
+#message-thread,
+#message-apps,
+#message-mark-unread,
+#message-edit
+ {
+    display: none !important;
+}
+
 /* New Profile is shit */
 /* Remove Status Circle Shadow */
 .mask-1FEkla.svg-2azL_l>circle {
@@ -281,7 +315,9 @@ code,
     --profile-gradient-button-color: var(--dark-background-2) !important;
     --profile-message-input-border-color: transparent !important;
 }
-[class^="textarea"], [class^="inputDefault"] {
+
+[class^="textarea"],
+[class^="inputDefault"] {
     background: transparent !important;
 }
 
@@ -292,9 +328,11 @@ code,
 }
 
 /* No Banner Color */
-.banner-2boKnS.popoutBanner-16rVDY, .banner-2boKnS.profileBanner-2zIsK7 {
+.banner-2boKnS.popoutBanner-16rVDY,
+.banner-2boKnS.profileBanner-2zIsK7 {
     display: none !important;
 }
-
-  
-
+/* Remove Banner Color In DM Profile */
+.banner-2boKnS.panelBanner-13bsBR {
+    background-color: transparent !important;
+}
