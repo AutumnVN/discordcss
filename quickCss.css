@@ -328,9 +328,35 @@ code,
 /* No Banner Color */
 .banner-2boKnS.popoutBanner-16rVDY,
 .banner-2boKnS.profileBanner-2zIsK7 {
-    display: none !important;
+    display: none;
 }
+
 /* Remove Banner Color In DM Profile */
 .banner-2boKnS.panelBanner-13bsBR {
     background-color: transparent !important;
+}
+
+/* Popout Banner */
+[aria-label="Chinooooosu!"]>.userProfileOuterUnthemed-2b2rsv .userProfileInnerThemedNonPremium-1gT-zY .banner-2boKnS {
+    background: url("https://cdn.discordapp.com/attachments/844482853161271336/1037273156412522516/chino-banner.jpg") center/cover no-repeat !important;
+    display: flex;
+}
+[aria-label="Chinooooosu!"]>.userProfileOuterUnthemed-2b2rsv .userProfileInnerThemedNonPremium-1gT-zY>.bannerSVGWrapper-qc0szY foreignObject {
+    mask: none;
+}
+[aria-label="Chinooooosu!"]>.userProfileOuterUnthemed-2b2rsv .userProfileInnerThemedNonPremium-1gT-zY>.bannerSVGWrapper-qc0szY .popoutBanner-16rVDY {
+    height: 120px
+}
+[aria-label="Chinooooosu!"]>.userProfileOuterUnthemed-2b2rsv .userProfileInnerThemedNonPremium-1gT-zY .bannerSVGWrapper-qc0szY {
+    overflow: visible;
+    z-index: 0;
+}
+[aria-label="Chinooooosu!"]>.userProfileOuterUnthemed-2b2rsv .userProfileInnerThemedNonPremium-1gT-zY.userPopoutInner-1hXSeY {
+   height: 100%;
+}
+[aria-label="Chinooooosu!"]>.userProfileOuterUnthemed-2b2rsv .userProfileInnerThemedNonPremium-1gT-zY.userPopoutInner-1hXSeY .container-5SvbtF {
+    margin-top: calc(100% - 299px);
+}
+[aria-label="Chinooooosu!"]>.userProfileOuterUnthemed-2b2rsv .userProfileInnerThemedNonPremium-1gT-zY>.clickable-3iBWTO.avatarWrapperNormal-1tQ3Je.avatarWrapper-3y0KZ1.avatarPositionNormal-V4Mjtq {
+    margin-top: 60px;
 }
