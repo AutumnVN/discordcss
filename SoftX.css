@@ -1913,7 +1913,7 @@
     top: 12px;
   }
   
-  @media only screen and (max-width: 1120px) {
+  @media only screen and (max-width: 1920px) {
     #app-mount .search-2Mwzzq .searchBar-jGtisZ {
       width: 28px;
       background: transparent;
