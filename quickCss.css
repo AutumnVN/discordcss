@@ -3,10 +3,6 @@
 @import url('https://discordstyles.github.io/SoftX/RadialGlow.css');
 @import url('https://discordstyles.github.io/SoftX/VerticalUserArea.css');
 @import url('https://discordstyles.github.io/Addons/windows-titlebar.css');
-@import url('https://sl4f.github.io/vencord/themes/hidenitro.css');
-@import url('https://sl4f.github.io/vencord/themes/hidedono.css');
-@import url('https://sl4f.github.io/vencord/themes/hidethreadsuggestions.css');
-
 
 :root {
     --dark-background: #20202069;
@@ -64,7 +60,7 @@
     /* Colour for invisible status - Note: this will only show for your own invisibility */
 }
 
-/* Home Button Custom Icon */
+/* Add Custom Icon For Home Button */
 .homeIcon-r0w4ny path {
     fill: transparent
 }
@@ -75,53 +71,138 @@
     min-height: 60px;
 }
 
-/* Member Since */
-.userInfoSection-3her-v>h3 {
-    color: var(--header-secondary);
-    margin-top: 16px;
+/* Add Voice Background */
+[data-selenium-video-tile="393694671383166998"] .background-L8lGH6 {
+    background: url("https://cdn.discordapp.com/attachments/844482853161271336/1029001344599740416/chino.jpg") center/cover no-repeat;
 }
 
-/* Fix Public */
+/* Add Code Font */
+[class^="markdown-"] [class^="codeInline-"],
+[class^="codeLine-"],
+[class^="codeBlockText-"],
+[class^="durationTimeDisplay-"],
+[class^="durationTimeSeparator-"],
+[class*="after_inlineCode-"],
+[class*="before_inlineCode-"],
+[class^="inlineCode-"],
+code.inline,
+code,
+.hljs {
+    font-family: var(--font-code) !important;
+}
+
+/* Add Bigger Picture In Picture */
+.pictureInPictureVideo-2puO2Q {
+    width: 640px;
+    height: 360px;
+}
+
+/* Add Some Text */
+[class^="scrollerContent-"]::after {
+    content: "AutumnVN // Chino Kafuu";
+    position: sticky;
+    color: var(--text-normal);
+    opacity: 50%;
+    align-self: flex-end;
+    right: 20px;
+    bottom: 12px;
+}
+
+/* Add Transparent Background Popout And Profile */
+#app-mount .profileColors-3Y0XaR {
+    --profile-avatar-border-color: transparent !important;
+    --profile-gradient-primary-color: var(--dark-background) !important;
+    --profile-gradient-secondary-color: var(--dark-background) !important;
+    --profile-body-background-color: transparent !important;
+    --profile-gradient-overlay-color: transparent !important;
+    --profile-body-divider-color: var(--dark-background-2) !important;
+    --profile-role-pill-background-color: var(--dark-background-2) !important;
+    --profile-gradient-button-color: var(--dark-background-2) !important;
+    --profile-message-input-border-color: transparent !important;
+}
+
+[class^="textarea"],
+[class^="inputDefault"] {
+    background: transparent !important;
+}
+
+/* Add Round Role And No Role Border */
+.role-2TIOKu {
+    border: 0;
+    border-radius: 727px;
+}
+
+/* Add Compact Mode */
+@media screen and (max-width: 1000px) {
+    [class^=membersWrap], /* Members List */
+    [aria-label*="Member List"], /* Button to Hide/Show Members List */
+    nav[class*=guilds] + [class^=base] > [class^=content] > [class^=sidebar], /* Channels List */
+    nav[class*=guilds][class^=wrapper] /* Servers List */
+    { display: none; }
+  
+    @media screen and (max-height: 500px) {
+      /* Channel Header */
+      [aria-label="Channel header"] { display: none !important;}
+      nav[class*=guilds] + [class^=base] > [class^=content] > [class^=chat] { padding-top: 0px !important;}
+    }
+}
+
+/* Add Replaces Message Links with "Jump to Message" */
+[title^="https://discord.com/channels/"],
+[title^="https://ptb.discord.com/channels/"],
+[title^="https://canary.discord.com/channels/"] {
+    line-height:0;
+    font-size:0;
+}
+[title^="https://discord.com/channels/"]::before,
+[title^="https://ptb.discord.com/channels/"]::before,
+[title^="https://canary.discord.com/channels/"]::before {
+  content: "Jump to Message";
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* Add Popout Banner */
+[aria-label="AutumnVN"]>.userProfileOuterUnthemed-2b2rsv .userProfileInnerThemedNonPremium-1gT-zY .banner-2boKnS {
+    background: url("https://cdn.discordapp.com/attachments/844482853161271336/1037273156412522516/chino-banner.jpg") center/cover no-repeat !important;
+    display: flex;
+}
+[aria-label="AutumnVN"]>.userProfileOuterUnthemed-2b2rsv .userProfileInnerThemedNonPremium-1gT-zY>.bannerSVGWrapper-qc0szY foreignObject {
+    mask: none;
+}
+[aria-label="AutumnVN"]>.userProfileOuterUnthemed-2b2rsv .userProfileInnerThemedNonPremium-1gT-zY>.bannerSVGWrapper-qc0szY .popoutBanner-16rVDY {
+    height: 120px
+}
+[aria-label="AutumnVN"]>.userProfileOuterUnthemed-2b2rsv .userProfileInnerThemedNonPremium-1gT-zY .bannerSVGWrapper-qc0szY {
+    overflow: visible;
+    z-index: 0;
+}
+[aria-label="AutumnVN"]>.userProfileOuterUnthemed-2b2rsv .userProfileInnerThemedNonPremium-1gT-zY.userPopoutInner-1hXSeY {
+   height: 100%;
+}
+[aria-label="AutumnVN"]>.userProfileOuterUnthemed-2b2rsv .userProfileInnerThemedNonPremium-1gT-zY.userPopoutInner-1hXSeY .container-5SvbtF {
+    margin-top: calc(100% - 299px);
+}
+[aria-label="AutumnVN"]>.userProfileOuterUnthemed-2b2rsv .userProfileInnerThemedNonPremium-1gT-zY>.clickable-3iBWTO.avatarWrapperNormal-1tQ3Je.avatarWrapper-3y0KZ1.avatarPositionNormal-V4Mjtq {
+    margin-top: 60px;
+}
+
+/* Add Wider Embeds */
+.embed-hKpSrO,
+.embed-hKpSrO > .gridContainer-1cF_Ic{
+    max-width: 666px !important;
+}
+
+/* Add Green Bar Spotify */
+#vc-spotify-progress-bar .barFill-2Bh7CX {
+    background: var(--spotify);
+}
+
+/* Fix Public Badge */
 .communityInfoContainer-1dMVpU {
     position: absolute;
     right: 50px;
     top: 23px;
-}
-
-/* Fix Profile Tab Buttons */
-.tabBarItem-30Te4-:nth-child(1):nth-last-child(2):after {
-    -webkit-mask: url('data:image/svg+xml; utf-8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>');
-    mask: url('data:image/svg+xml; utf-8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>');
-}
-
-.tabBarItem-30Te4-:nth-child(1):nth-last-child(3):after {
-    -webkit-mask: url('data:image/svg+xml; utf-8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>');
-    mask: url('data:image/svg+xml; utf-8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>');
-}
-
-.tabBarItem-30Te4-:nth-child(1):nth-last-child(4):after {
-    -webkit-mask: url('data:image/svg+xml; utf-8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>');
-    mask: url('data:image/svg+xml; utf-8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>');
-}
-
-.tabBarItem-30Te4-:nth-child(2):nth-last-child(1)::after {
-    -webkit-mask: url('data:image/svg+xml; utf-8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 5c7.18 0 13 5.82 13 13M6 11a7 7 0 017 7m-6 0a1 1 0 11-2 0 1 1 0 012 0z" /></svg>');
-    mask: url('data:image/svg+xml; utf-8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 5c7.18 0 13 5.82 13 13M6 11a7 7 0 017 7m-6 0a1 1 0 11-2 0 1 1 0 012 0z" /></svg>');
-}
-
-.tabBarItem-30Te4-:nth-child(2):nth-last-child(3)::after {
-    -webkit-mask: url('data:image/svg+xml; utf-8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 5c7.18 0 13 5.82 13 13M6 11a7 7 0 017 7m-6 0a1 1 0 11-2 0 1 1 0 012 0z" /></svg>');
-    mask: url('data:image/svg+xml; utf-8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 5c7.18 0 13 5.82 13 13M6 11a7 7 0 017 7m-6 0a1 1 0 11-2 0 1 1 0 012 0z" /></svg>');
-}
-
-.tabBarItem-30Te4-:nth-last-child(2)::after {
-    -webkit-mask: url('data:image/svg+xml; utf-8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" /></svg>');
-    mask: url('data:image/svg+xml; utf-8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" /></svg>');
-}
-
-.tabBarItem-30Te4-:nth-last-child(1)::after {
-    -webkit-mask: url('data:image/svg+xml; utf-8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" /></svg>');
-    mask: url('data:image/svg+xml; utf-8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" /></svg>');
 }
 
 /* Fix Emoji Tab Buttons */
@@ -140,124 +221,34 @@
     mask: url('data:image/svg+xml; utf-8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>');
 }
 
-/* Remove "Add to Server" button on Bot Profile */
-.applicationInstallButton-1-58qm.button-f2h6uQ.lookFilled-yCfaCM.colorBrand-I6CyqQ.sizeSmall-wU2dO-.grow-2sR_-F {
-    display: none;
-}
-
-/* Remove Turn on Camera button because it's fucking too big and easy to misclick */
-.button-1EGGcP[aria-label="Turn On Camera"] {
-    display: none;
-}
-
-/* Fix Voice Text Channel Buttons */
+/* Fix Voice Text Channel Button */
 .button-f2h6uQ.lookBlank-21BCro.colorBrand-I6CyqQ.grow-2sR_-F.chatButton-10jXXp {
     position: fixed;
     top: 47px;
     right: 227px;
 }
 
-/* Voice Background */
-[data-selenium-video-tile="393694671383166998"] .background-L8lGH6 {
-    background: url("https://cdn.discordapp.com/attachments/844482853161271336/1029001344599740416/chino.jpg") center/cover no-repeat;
+/* Remove Turn On Camera Button */
+.button-1EGGcP[aria-label="Turn On Camera"] {
+    display: none;
 }
 
-/* User Background */
-/* Popout 
-.userPopout-2j1gM4.profileColors-3Y0XaR[aria-label="AutumnVN"] .banner-1YaD3N.popoutBanner-3cqRD9 {
-    background: url("https://cdn.discordapp.com/attachments/844482853161271336/1029001344599740416/chino.jpg") center/cover no-repeat;
-    width: 300px;
-    height: 120px;
-}
-
-.userPopout-2j1gM4.profileColors-3Y0XaR[aria-label="AutumnVN"] .bannerSVGWrapper-qc0szY {
-    width: 300px;
-    height: 120px;
-}
-
-.userPopout-2j1gM4.profileColors-3Y0XaR[aria-label="AutumnVN"] .bannerSVGWrapper-qc0szY foreignObject {
-    y: -30px;
-    width: 300px;
-    height: 120px;
-}
-
-.userPopout-2j1gM4.profileColors-3Y0XaR[aria-label="AutumnVN"] .avatarWrapperNormal-ahVUaC.avatarWrapper-eenWra.avatarPositionNormal-2jWoC2.clickable-GKg4Qy {
-    top: 80px;
-}
-
-/* Profile 
-.root-8LYsGj.profileColors-3Y0XaR.root-g14mjS.small-23Atuv.fullscreenOnMobile-ixj0e3 .banner-1YaD3N.profileBanner-1owKI5 {
-    background: url("https://cdn.discordapp.com/attachments/844482853161271336/1029001344599740416/chino.jpg") center/cover no-repeat;
-    width: 600px;
-    height: 240px;
-}
-
-.root-8LYsGj.profileColors-3Y0XaR.root-g14mjS.small-23Atuv.fullscreenOnMobile-ixj0e3 .bannerSVGWrapper-qc0szY {
-    width: 600px;
-    height: 240px;
-}
-
-.root-8LYsGj.profileColors-3Y0XaR.root-g14mjS.small-23Atuv.fullscreenOnMobile-ixj0e3 .bannerSVGWrapper-qc0szY foreignObject {
-    y: -60px;
-    width: 600px;
-    height: 240px;
-}
-
-/* Replace every image to Chino
-img {
-    content: url('https://cdn.discordapp.com/avatars/833707580593143841/32a1c95f5472dd634037e52c7408c192.jpg?size=4096');
-    object-fit: cover;
-}
-/* */
-
-/* Change Code Font */
-[class^="markdown-"] [class^="codeInline-"],
-[class^="codeLine-"],
-[class^="codeBlockText-"],
-[class^="durationTimeDisplay-"],
-[class^="durationTimeSeparator-"],
-[class*="after_inlineCode-"],
-[class*="before_inlineCode-"],
-[class^="inlineCode-"],
-code.inline,
-code,
-.hljs {
-    font-family: var(--font-code) !important;
-}
-
-/* No Nitro Ads */
-[class^="channel-"]>div>[href="/store"],
-/* Nitro Button above DM List */
-[class^="channelTextArea"] [class^="buttons-"]>button,
-/* Hide Gift Button */
-[class^="upsellVisible-"],
-/* Hide Banner Nitro Upsell Header */
-[class^="premiumIconWrapper"],
-/* Hide Nitro Icon on Banners */
-[class^="characterCount-"] [class*="upsell-"],
-/* "Send longer Messages with Discord Nitro!" */
-[class^="emojiSection-"] [class*="shinyButton-"]
-
-/* "Get Nitro" button in Emoji/Sticker modal" */
-    {
+/* Remove Nitro Ads */
+[class^="channel-"] > div > [href="/store"], /* Nitro Button above DM List */
+[class^="channelTextArea"] [class^="buttons-"] > button, /* Hide Gift Button */
+[class^="upsellVisible-"], /* Hide Banner Nitro Upsell Header */
+[class^="premiumIconWrapper"], /* Hide Nitro Icon on Banners */
+[class^="characterCount-"] [class*="upsell-"], /* "Send longer Messages with Discord Nitro!" */
+[class^="emojiSection-"] [class*="shinyButton-"], /* "Get Nitro" button in Emoji/Sticker modal" */
+[class*="tryItOutSection-"], /* Try Nitro Banner */
+[class*="bannerNitroUpsell-"], /* "Unlock Banner" in Profile Editor */
+[class^="imageUploaderHint-"] {
     display: none !important;
 }
 
-/* Very Big Picture In Picture */
-.pictureInPictureVideo-2puO2Q {
-    width: 640px;
-    height: 360px;
-}
-
-/* Text */
-[class^="scrollerContent-"]::after {
-    content: "AutumnVN // Chino Kafuu";
-    position: sticky;
-    color: var(--text-normal);
-    opacity: 50%;
-    align-self: flex-end;
-    right: 20px;
-    bottom: 12px;
+/* Remove Thread Suggestion */
+[class^="threadSuggestionBar"] {
+    display: none;
 }
 
 /* Remove Invite Button On Channel */
@@ -270,7 +261,7 @@ code,
     display: none !important;
 }
 
-/* Remove Useless Context Menu */
+/* Remove Useless Context Menus */
 #channel-context-invite-people,
 #user-context-invite-to-server,
 #user-context-mark-as-message-request,
@@ -292,43 +283,7 @@ code,
     display: none !important;
 }
 
-/* New Profile is shit */
-/* Remove Status Circle Shadow */
-.mask-1FEkla.svg-2azL_l>circle {
-    opacity: 0 !important
-}
-
-.avatarHint-2g3Mcd>foreignObject {
-    mask: none !important;
-    border-radius: 50% !important;
-    overflow: hidden;
-}
-
-/* Transparent Background Popout And Profile */
-#app-mount .profileColors-3Y0XaR {
-    --profile-avatar-border-color: transparent !important;
-    --profile-gradient-primary-color: var(--dark-background) !important;
-    --profile-gradient-secondary-color: var(--dark-background) !important;
-    --profile-body-background-color: transparent !important;
-    --profile-gradient-overlay-color: transparent !important;
-    --profile-body-divider-color: var(--dark-background-2) !important;
-    --profile-role-pill-background-color: var(--dark-background-2) !important;
-    --profile-gradient-button-color: var(--dark-background-2) !important;
-    --profile-message-input-border-color: transparent !important;
-}
-
-[class^="textarea"],
-[class^="inputDefault"] {
-    background: transparent !important;
-}
-
-/* Round Role And No Role Border */
-.role-2TIOKu {
-    border: 0;
-    border-radius: 727px;
-}
-
-/* No Banner Color */
+/* Remove Banner Color */
 .banner-2boKnS.popoutBanner-16rVDY,
 .banner-2boKnS.profileBanner-2zIsK7 {
     display: none;
@@ -339,33 +294,25 @@ code,
     background-color: transparent !important;
 }
 
-/* Popout Banner */
-[aria-label="osu!chino"]>.userProfileOuterUnthemed-2b2rsv .userProfileInnerThemedNonPremium-1gT-zY .banner-2boKnS {
-    background: url("https://cdn.discordapp.com/attachments/844482853161271336/1037273156412522516/chino-banner.jpg") center/cover no-repeat !important;
-    display: flex;
-}
-[aria-label="osu!chino"]>.userProfileOuterUnthemed-2b2rsv .userProfileInnerThemedNonPremium-1gT-zY>.bannerSVGWrapper-qc0szY foreignObject {
-    mask: none;
-}
-[aria-label="osu!chino"]>.userProfileOuterUnthemed-2b2rsv .userProfileInnerThemedNonPremium-1gT-zY>.bannerSVGWrapper-qc0szY .popoutBanner-16rVDY {
-    height: 120px
-}
-[aria-label="osu!chino"]>.userProfileOuterUnthemed-2b2rsv .userProfileInnerThemedNonPremium-1gT-zY .bannerSVGWrapper-qc0szY {
-    overflow: visible;
-    z-index: 0;
-}
-[aria-label="osu!chino"]>.userProfileOuterUnthemed-2b2rsv .userProfileInnerThemedNonPremium-1gT-zY.userPopoutInner-1hXSeY {
-   height: 100%;
-}
-[aria-label="osu!chino"]>.userProfileOuterUnthemed-2b2rsv .userProfileInnerThemedNonPremium-1gT-zY.userPopoutInner-1hXSeY .container-5SvbtF {
-    margin-top: calc(100% - 299px);
-}
-[aria-label="osu!chino"]>.userProfileOuterUnthemed-2b2rsv .userProfileInnerThemedNonPremium-1gT-zY>.clickable-3iBWTO.avatarWrapperNormal-1tQ3Je.avatarWrapper-3y0KZ1.avatarPositionNormal-V4Mjtq {
-    margin-top: 60px;
+/* Remove Snow Decor */
+.avatarDecorationHint-GIo7Yh {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    left: 0px;
+    top: 0px;
 }
 
-/* Embeds */
-.embed-hKpSrO,
-.embed-hKpSrO > .gridContainer-1cF_Ic{
-    max-width: 666px !important;
+[mask="url(#svg-mask-avatar-decoration-profile-status-square-80)"]
+    .avatarHintInner-3gk_Yx {
+    font-size: 12px !important;
 }
+
+.avatarDecoration-2OJuSI,
+.avatarDecoration-34OC0G,
+.bannerSVGWrapper-qc0szY mask image {
+    display: none;
+}
+
+
+  

@@ -1913,34 +1913,6 @@
     top: 12px;
   }
   
-  .full-motion .search-1FM8Qc.focused-1xh-wG::before,
-  .full-motion .container-2McqkF {
-  }
-  
-  @media only screen and (max-width: 1200px) {
-    #app-mount .search-1FM8Qc:not(.focused-1xh-wG) {
-      height: 24px;
-    }
-    #app-mount .search-1FM8Qc:not(.focused-1xh-wG) .searchBar-jGtisZ {
-      background: transparent;
-      border: none;
-      width: 24px;
-      height: 24px;
-    }
-    #app-mount .search-1FM8Qc:not(.focused-1xh-wG) .iconContainer-1RqWJj {
-      width: 18px;
-      height: 18px;
-    }
-    #app-mount .search-1FM8Qc:not(.focused-1xh-wG) .icon-18rqoe {
-      color: var(--interactive-normal);
-      width: 20px;
-      height: 20px;
-    }
-    #app-mount .search-1FM8Qc:not(.focused-1xh-wG) .search-39IXmY .icon-tZMHgY svg {
-      width: 100%;
-      height: 100%;
-    }
-  }
   @media only screen and (max-width: 1120px) {
     #app-mount .search-2Mwzzq .searchBar-jGtisZ {
       width: 28px;
@@ -2096,9 +2068,6 @@
   }
   #app-mount .autocompleteRow-14iwvH .base-2v-uc0.selected-3H3-RC {
     background: var(--background-modifier-hover);
-  }
-  
-  .full-motion .userPopout-2j1gM4 {
   }
   
   #app-mount .contentWrapper-3vHNP2 {
@@ -3423,11 +3392,7 @@
   #app-mount .protip-1jXzAl {
     display: none;
   }
-  
-  .full-motion .input-3r5zZY,
-  .full-motion .scroller-2qwVWY {
-  }
-  
+
   #app-mount .perks-26lTSw {
     border-radius: 6px;
     background: rgba(255, 255, 255, 0.02);
