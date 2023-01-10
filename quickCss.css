@@ -175,17 +175,18 @@ code,
 }
 [aria-label="AutumnVN"]>.userProfileOuterUnthemed-2b2rsv .userProfileInnerThemedNonPremium-1gT-zY .bannerSVGWrapper-qc0szY {
     overflow: visible;
-    z-index: 0;
 }
 [aria-label="AutumnVN"]>.userProfileOuterUnthemed-2b2rsv .userProfileInnerThemedNonPremium-1gT-zY.userPopoutInner-1hXSeY {
    height: 100%;
 }
 [aria-label="AutumnVN"]>.userProfileOuterUnthemed-2b2rsv .userProfileInnerThemedNonPremium-1gT-zY.userPopoutInner-1hXSeY .container-5SvbtF {
-    margin-top: calc(100% - 299px);
+    margin-top: calc(100% - 280px);
 }
 [aria-label="AutumnVN"]>.userProfileOuterUnthemed-2b2rsv .userProfileInnerThemedNonPremium-1gT-zY>.clickable-3iBWTO.avatarWrapperNormal-1tQ3Je.avatarWrapper-3y0KZ1.avatarPositionNormal-V4Mjtq {
     margin-top: 60px;
 }
+
+
 
 /* Add Wider Embeds */
 .embed-hKpSrO,
